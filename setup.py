@@ -2,7 +2,7 @@ import re
 from setuptools import setup, find_packages
 
 # Load version from module (without loading the whole module)
-with open('src/pyperclip/__init__.py', 'r') as fd:
+with open('src/pyp3rclip/__init__.py', 'r') as fd:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
                         fd.read(), re.MULTILINE).group(1)
 
@@ -12,9 +12,9 @@ with open("README.md", "r") as fh:
 
 # Dynamically calculate the version based on pyperclip.VERSION.
 setup(
-    name='pyperclip',
+    name='pyp3rclip',
     version=version,
-    url='https://github.com/asweigart/pyperclip',
+    url='https://github.com/BraunMichael/pyp3rclip',
     author='Al Sweigart',
     author_email='al@inventwithpython.com',
     description=('A cross-platform clipboard module for Python. (Only handles plain text for now.)'),
