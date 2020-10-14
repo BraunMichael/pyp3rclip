@@ -1,16 +1,16 @@
 """
-Pyperclip
+pyp3rclip
 
 A cross-platform clipboard module for Python, with copy & paste functions for plain text.
 By Al Sweigart al@inventwithpython.com
 BSD License
 
 Usage:
-  import pyperclip
-  pyperclip.copy('The text to be copied to the clipboard.')
-  spam = pyperclip.paste()
+  import pyp3rclip
+  pyp3rclip.copy('The text to be copied to the clipboard.')
+  spam = pyp3rclip.paste()
 
-  if not pyperclip.is_available():
+  if not pyp3rclip.is_available():
     print("Copy functionality unavailable!")
 
 On Windows, no additional modules are needed.
@@ -43,7 +43,7 @@ Security Note: This module runs programs with these names:
     - klipper
     - qdbus
 A malicious user could rename or add programs with these names, tricking
-Pyperclip into running them with whatever permissions the Python process has.
+pyp3rclip into running them with whatever permissions the Python process has.
 
 """
 __version__ = '1.8.0'
@@ -66,7 +66,7 @@ from ctypes import c_size_t, sizeof, c_wchar_p, get_errno, c_wchar
 HAS_DISPLAY = os.getenv("DISPLAY", False)
 
 EXCEPT_MSG = """
-    Pyperclip could not find a copy/paste mechanism for your system.
+    pyp3rclip could not find a copy/paste mechanism for your system.
     For more information, please visit https://pyperclip.readthedocs.io/en/latest/index.html#not-implemented-error """
 
 PY2 = sys.version_info[0] == 2
@@ -642,7 +642,7 @@ def lazy_load_stub_copy(text):
     A stub function for copy(), which will load the real copy() function when
     called so that the real copy() function is used for later calls.
 
-    This allows users to import pyperclip without having determine_clipboard()
+    This allows users to import pyp3rclip without having determine_clipboard()
     automatically run, which will automatically select a clipboard mechanism.
     This could be a problem if it selects, say, the memory-heavy PyQt4 module
     but the user was just going to immediately call set_clipboard() to use a
@@ -664,7 +664,7 @@ def lazy_load_stub_paste():
     A stub function for paste(), which will load the real paste() function when
     called so that the real paste() function is used for later calls.
 
-    This allows users to import pyperclip without having determine_clipboard()
+    This allows users to import pyp3rclip without having determine_clipboard()
     automatically run, which will automatically select a clipboard mechanism.
     This could be a problem if it selects, say, the memory-heavy PyQt4 module
     but the user was just going to immediately call set_clipboard() to use a
@@ -696,7 +696,7 @@ def waitForPaste(timeout=None):
     """This function call blocks until a non-empty text string exists on the
     clipboard. It returns this text.
 
-    This function raises PyperclipTimeoutException if timeout was set to
+    This function raises pyp3rclipTimeoutException if timeout was set to
     a number of seconds that has elapsed without non-empty text being put on
     the clipboard."""
     startTime = time.time()

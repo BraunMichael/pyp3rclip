@@ -14,7 +14,12 @@ To copy text to the clipboard, pass a string to ``pyperclip.copy()``. To paste t
 
 .. code:: python
 
-    >>> import pyperclip
+    >>> import pyp3rclip
+        >>> pyperclip.copy('Hello, world!')
+        >>> pyperclip.paste()
+        'Hello, world!'
+
+    Pyperclip also has a
     >>> pyperclip.copy('Hello, world!')
     >>> pyperclip.paste()
     'Hello, world!'
@@ -23,7 +28,47 @@ Pyperclip also has a `pyperclip.waitForPaste()` function, which blocks and doesn
 
 .. code:: python
 
-    >>> import pyperclip
+    >>> import pyp3rclip
+        >>> pyperclip.waitForPaste()  # Doesn't return until non-empty text is on the clipboard.
+        'Hello, world!'
+
+        >>> pyperclip.copy('original text')
+        >>> pyperclip.waitForNewPaste()  # Doesn't return until the clipboard has something other than "original text".
+        'Hello, world!'
+
+    These functions also have a
+        >>> pyperclip.waitForPaste()  # Doesn't return until non-empty text is on the clipboard.
+        'Hello, world!'
+
+        >>> pyp3rclip.copy('original text')
+        >>> pyperclip.waitForNewPaste()  # Doesn't return until the clipboard has something other than "original text".
+        'Hello, world!'
+
+    These functions also have a
+        >>> pyperclip.waitForPaste()  # Doesn't return until non-empty text is on the clipboard.
+        'Hello, world!'
+
+        >>> pyp3rclip.copy('original text')
+        >>> pyperclip.waitForNewPaste()  # Doesn't return until the clipboard has something other than "original text".
+        'Hello, world!'
+
+    These functions also have a
+        >>> pyperclip.waitForPaste()  # Doesn't return until non-empty text is on the clipboard.
+        'Hello, world!'
+
+        >>> pyp3rclip.copy('original text')
+        >>> pyp3rclip.waitForNewPaste()  # Doesn't return until the clipboard has something other than "original text".
+        'Hello, world!'
+
+    These functions also have a
+        >>> pyperclip.waitForPaste()  # Doesn't return until non-empty text is on the clipboard.
+        'Hello, world!'
+
+        >>> pyp3rclip.copy('original text')
+        >>> pyp3rclip.waitForNewPaste()  # Doesn't return until the clipboard has something other than "original text".
+        'Hello, world!'
+
+    These functions also have a
     >>> pyperclip.waitForPaste()  # Doesn't return until non-empty text is on the clipboard.
     'Hello, world!'
 
@@ -32,6 +77,30 @@ Pyperclip also has a `pyperclip.waitForPaste()` function, which blocks and doesn
     'Hello, world!'
 
 These functions also have a `timeout` argument to specify a number of seconds to check. If the timeout elapses without returning, the functions raise a `PyperclipTimeoutException` exception:
+
+    >>> import pyp3rclip
+    >>> pyperclip.waitForNewPaste(5)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "c:
+
+    >>> import pyp3rclip
+    >>> pyperclip.waitForNewPaste(5)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "c:
+
+    >>> import pyp3rclip
+    >>> pyp3rclip.waitForNewPaste(5)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "c:
+
+    >>> import pyp3rclip
+    >>> pyp3rclip.waitForNewPaste(5)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "c:
 
     >>> import pyperclip
     >>> pyperclip.waitForNewPaste(5)

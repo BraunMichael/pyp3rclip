@@ -2,11 +2,11 @@ This is a slightly modified version of pyperclip 1.8.3 fixing an attribution err
 
 The description below is from the original pyperclip repository: https://github.com/asweigart/pyperclip
 
-Pyperclip is a cross-platform Python module for copy and paste clipboard functions. It works with Python 2 and 3.
+Pyp3rclip is a cross-platform Python module for copy and paste clipboard functions. It works with Python 2 and 3.
 
-Install on Windows: `pip install pyperclip`
+Install on Windows: `pip install pyp3rclip`
 
-Install on Linux/macOS: `pip3 install pyperclip`
+Install on Linux/macOS: `pip3 install pyp3rclip`
 
 Al Sweigart al@inventwithpython.com
 BSD License
@@ -14,9 +14,9 @@ BSD License
 Example Usage
 =============
 
-    >>> import pyperclip
-    >>> pyperclip.copy('The text to be copied to the clipboard.')
-    >>> pyperclip.paste()
+    >>> import pyp3rclip
+    >>> pyp3rclip.copy('The text to be copied to the clipboard.')
+    >>> pyp3rclip.paste()
     'The text to be copied to the clipboard.'
 
 
