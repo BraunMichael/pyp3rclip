@@ -1,4 +1,4 @@
-This is a slightly modified version of pyperclip 1.8.3 fixing an attribution error, renamed to pyp3rclip as this may break python 2 compatibility.
+This is a slightly modified version of pyperclip 1.8.1 fixing an attribution error, renamed to pyp3rclip as this may break python 2 compatibility.
 
 The description below is from the original pyperclip repository: https://github.com/asweigart/pyperclip
 
