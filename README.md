@@ -1,3 +1,7 @@
+This is a slightly modified version of pyperclip 1.8.3 fixing an attribution error, renamed to pyp3rclip as this may break python 2 compatibility.
+
+The description below is from the original pyperclip repository: https://github.com/asweigart/pyperclip
+
 Pyperclip is a cross-platform Python module for copy and paste clipboard functions. It works with Python 2 and 3.
 
 Install on Windows: `pip install pyperclip`
